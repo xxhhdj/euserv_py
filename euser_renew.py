@@ -81,9 +81,9 @@ GLOBAL_CONFIG = GlobalConfig(
 # 账号列表配置
 ACCOUNTS = [
     AccountConfig(
-        imap_server=os.getenv("IMAP_SERV", "imap.gmail.com"),
+        email=os.getenv("EUSERV_EMAIL"),
         password=os.getenv("EUSERV_PASSWORD"),
-        imap_server=os.getenv("IMAP_SERV"),
+        imap_server=os.getenv("IMAP_SERV", "imap.gmail.com"),
         email_password=os.getenv("EMAIL_PASS")  # Gmail 应用专用密码
     ),
     # 添加更多账号示例：
